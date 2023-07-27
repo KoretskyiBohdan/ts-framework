@@ -1,0 +1,23 @@
+{
+  "name": "ts-framework",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "parcel index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KoretskyiBohdan/ts-framework.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KoretskyiBohdan/ts-framework/issues"
+  },
+  "homepage": "https://github.com/KoretskyiBohdan/ts-framework#readme",
+  "dependencies": {
+    "parcel": "^2.9.3"
+  }
+}
