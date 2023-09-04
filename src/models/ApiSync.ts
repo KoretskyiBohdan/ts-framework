@@ -4,16 +4,14 @@ interface HasId {
   id?: number;
 }
 
-export class Sync<T extends HasId> {
+export class ApiSync<T extends HasId> {
   constructor(public rootUrl: string) {}
 
-  async fetch(id: number) {
-    const { data } = await axios.get<T>(`${this.rootUrl}/${id}`);
-
-    return data;
+  fetch(id: number) {
+    return axios.get<T>(`${this.rootUrl}/${id}`);
   }
 
-  async save(data: T) {
+  save(data: T) {
     const { id } = data;
     if (id) {
       return axios.put<T>(`${this.rootUrl}/${id}`, data);
